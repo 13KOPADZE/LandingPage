@@ -1,0 +1,50 @@
+.header {
+  background-color: transparent;
+  font-family: $font-family;
+  padding-top: 38px;
+  .container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        width: 166px;
+        height: 33px;
+        cursor: $cursor;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          cursor: $cursor;
+          display: inline-block;
+          margin: 0 38px;
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 16px;
+          button {
+            border-radius: $border-radius;
+            text-transform: $uppercase;
+            background-color: $background-color;
+            font-weight: $font-weight;
+            cursor: $cursor;
+            font-size: 16px;
+            border: 1px solid #fff;
+            color: #fff;
+            outline: none;
+            padding: 15px 39px 15px 39px;
+            transition: 0.5s;
+            &:hover {
+              color: $primary-color;
+              border: 1px solid $primary-color;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

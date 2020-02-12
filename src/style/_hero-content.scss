@@ -1,0 +1,71 @@
+.hero-background {
+  width: 100%;
+  max-height: 850px;
+  height: 100vh;
+  margin-top: -90px;
+  background-image: linear-gradient(rgba(85, 85, 85, 0.4)),
+    url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-family;
+  text-transform: $uppercase;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .hero-contnet {
+      margin: 0;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        font-size: 72px;
+        text-align: $text-align;
+        color: $white-color;
+      }
+      h2 {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: $text-align;
+        color: $white-color;
+      }
+      .relative {
+        position: relative;
+        margin-top: 90px;
+        max-width: 770px;
+        height: 60px;
+        width: 100%;
+        .search-input {
+          overflow: hidden;
+          border-radius: $border-radius;
+          border: none;
+          outline: none;
+          height: 60px;
+          width: 100%;
+          padding: 30px;
+          &::placeholder {
+            text-transform: $uppercase;
+          }
+        }
+        .search-info {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          height: 60px;
+          width: 200px;
+          display: flex;
+          background: $primary-color;
+          font-weight: bold;
+          font-size: 14px;
+          padding: 0 50px;
+          border-bottom-right-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+          align-items: center;
+          color: $white-color;
+        }
+      }
+    }
+  }
+}

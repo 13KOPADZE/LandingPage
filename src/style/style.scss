@@ -1,0 +1,21 @@
+$border-radius: 5px;
+$uppercase: uppercase;
+$background-color: transparent;
+$font-weight: bold;
+$cursor: pointer;
+$primary-color: #e7434e;
+$white-color: #fff;
+$counters-color: #717171;
+$destination-headings: #343435;
+$text-align: center;
+$font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+@import "./header";
+@import "./hero-content";
+@import "./destination";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
