@@ -7,7 +7,6 @@
     url("../image/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: $font-family;
   text-transform: $uppercase;
 
   .container {
@@ -30,6 +29,7 @@
         font-size: 30px;
         text-align: $text-align;
         color: $white-color;
+        font-weight: 400;
       }
       .relative {
         position: relative;

@@ -4,6 +4,7 @@ $background-color: transparent;
 $font-weight: bold;
 $cursor: pointer;
 $primary-color: #e7434e;
+$load-more-btn: #ccc;
 $white-color: #fff;
 $counters-color: #717171;
 $destination-headings: #343435;
@@ -13,9 +14,19 @@ $font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 @import "./header";
 @import "./hero-content";
 @import "./destination";
-
+@import "./boat-register";
+@import "./boat";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+button {
+  outline: none;
+  cursor: pointer;
 }

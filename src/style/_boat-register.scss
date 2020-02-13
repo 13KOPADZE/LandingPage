@@ -1,0 +1,45 @@
+.boat-register {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  height: 100vh;
+  background-image: linear-gradient(rgba(85, 85, 85, 0.4)),
+    url("../image/your-boat.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  text-transform: $uppercase;
+  margin-bottom: 100px;
+  h1 {
+    font-size: 72px;
+    text-align: $text-align;
+    color: $white-color;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: $text-align;
+    color: $white-color;
+    font-weight: 400;
+  }
+  button {
+    background-color: $primary-color;
+    text-transform: $uppercase;
+    border-radius: $border-radius;
+    color: $white-color;
+    border: 1px solid $primary-color;
+    height: 60px;
+    max-width: 320px;
+    width: 100%;
+    margin-top: 90px;
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+      background-color: transparent;
+      border: 1px solid $white-color;
+    }
+  }
+}

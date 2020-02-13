@@ -2,21 +2,27 @@
   <div>
     <HeaderComponent />
     <HeroComponent />
-    <CounterComponent />
+    <DestinationCompoent />
+    <BoatRegisterComponent />
+    <BoatComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
 import HeroComponent from "./components/HeroComponent";
-import CounterComponent from "./components/CounterComponent";
+import DestinationCompoent from "./components/DestinationComponent";
+import BoatRegisterComponent from "./components/BoatRegisterComponent";
+import BoatComponent from "./components/BoatComponent";
 
 export default {
   name: "App",
   components: {
     HeaderComponent,
     HeroComponent,
-    CounterComponent
+    DestinationCompoent,
+    BoatRegisterComponent,
+    BoatComponent
   }
 };
 </script>
