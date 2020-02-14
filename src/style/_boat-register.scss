@@ -43,3 +43,18 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .boat-register {
+    height: auto;
+    h1 {
+      font-size: 25px;
+      margin-top: 60px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    button {
+      margin: 40px 0;
+    }
+  }
+}

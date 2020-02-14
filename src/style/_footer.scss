@@ -1,0 +1,95 @@
+footer {
+  position: relative;
+  background: $footer-background;
+  padding: 60px 0;
+  max-height: 325px;
+  height: 100vh;
+  .footer-border {
+    position: absolute;
+    top: 0;
+    height: 6px;
+    width: 100%;
+    background: repeating-linear-gradient(
+      135deg,
+      $primary-color,
+      $primary-color 10px,
+      #051155 0px,
+      #051155 15px
+    );
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    color: $white-color;
+    h3 {
+      text-transform: $uppercase;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .footer-text {
+      max-width: 180px;
+      padding-right: 20px;
+    }
+    .footer-subscribe {
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      .footer-input {
+        position: relative;
+        .footer-search-input {
+          overflow: hidden;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          height: 42px;
+          width: 100%;
+          padding-left: 15px;
+          &::placeholder {
+            text-transform: $uppercase;
+          }
+        }
+        .footer-search-info {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          height: 42px;
+          display: flex;
+          background: $primary-color;
+          border-bottom-right-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+          align-items: center;
+          color: $white-color;
+          padding: 0 20px;
+          text-transform: $uppercase;
+        }
+      }
+    }
+    .d-flex {
+      display: flex;
+      padding: 20px 0;
+      .icon-component {
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    max-height: 100%;
+    height: auto;
+    .footer-content {
+      flex-direction: column;
+      .footer-text {
+        max-width: 100%;
+        padding: 20px;
+      }
+      .footer-subscribe {
+        max-width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+}

@@ -30,7 +30,6 @@
         border-radius: $border-radius;
         width: 100%;
         max-height: 360px;
-        height: 100vh;
       }
       .boat-price {
         background: $primary-color;
@@ -67,7 +66,6 @@
     background: transparent;
     border: 1px solid $load-more-btn;
     height: 60px;
-    outline: none;
     text-align: center;
     padding: 0 40px;
     margin: 100px 0;
@@ -76,6 +74,13 @@
       color: $primary-color;
       border: 1px solid $primary-color;
       transition: 0.5s;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .boat-content {
+    .boat-grid {
+      grid-template-columns: repeat(1, minmax(100px, 1fr));
     }
   }
 }

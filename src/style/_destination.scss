@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #fff;
+  background: $white-color;
   border-radius: 5px;
   height: 140px;
   max-width: 1200px;
@@ -13,7 +13,7 @@
   margin-bottom: 110px;
   margin-top: -70px;
   .counter-info {
-    border-right: 1px solid $counters-color;
+    border-right: 1px solid rgba(113, 113, 113, 0.3);
     padding-right: 90px;
     text-align: center;
     h2 {
@@ -94,7 +94,6 @@
     background: transparent;
     border: 1px solid $load-more-btn;
     height: 60px;
-    outline: none;
     text-align: center;
     padding: 0 40px;
     margin: 100px 0;
@@ -103,6 +102,53 @@
       color: $primary-color;
       border: 1px solid $primary-color;
       transition: 0.5s;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .grid-content {
+    .grid {
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+  }
+}
+@media (max-width: 800px) {
+  .counter {
+    background: $white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 110px;
+    margin-top: -70px;
+    height: auto;
+    .counter-info {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    .counter-info:last-child {
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .grid-content {
+    .grid {
+      grid-template-columns: repeat(1, minmax(100px, 1fr));
+      :first-child {
+        grid-column: 1;
+      }
     }
   }
 }

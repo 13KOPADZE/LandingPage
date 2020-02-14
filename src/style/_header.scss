@@ -1,6 +1,6 @@
 .header {
   background-color: transparent;
-  padding-top: 38px;
+  padding-top: 35px;
   .container {
     max-width: 1500px;
     width: 100%;
@@ -9,39 +9,104 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
       .logo {
         width: 166px;
         height: 33px;
         cursor: $cursor;
       }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        li {
-          cursor: $cursor;
-          display: inline-block;
-          margin: 0 38px;
-          text-transform: uppercase;
-          color: #fff;
-          font-size: 16px;
-          button {
-            border-radius: $border-radius;
-            text-transform: $uppercase;
-            background-color: $background-color;
-            font-weight: $font-weight;
+      .mobile-nav-toggler {
+        display: none;
+      }
+      .nav-bar {
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
             cursor: $cursor;
+            display: inline-block;
+            margin: 0 38px;
+            text-transform: uppercase;
+            color: $white-color;
             font-size: 16px;
-            border: 1px solid #fff;
-            color: #fff;
-            outline: none;
-            padding: 15px 39px 15px 39px;
-            transition: 0.5s;
-            &:hover {
-              color: $primary-color;
-              border: 1px solid $primary-color;
+            button {
+              border-radius: $border-radius;
+              text-transform: $uppercase;
+              background-color: $background-color;
+              font-weight: $font-weight;
+              cursor: $cursor;
+              font-size: 16px;
+              border: 1px solid $white-color;
+              color: $white-color;
+              padding: 15px 39px 15px 39px;
               transition: 0.5s;
+              &:hover {
+                color: $primary-color;
+                border: 1px solid $primary-color;
+                transition: 0.5s;
+              }
             }
           }
+        }
+      }
+      .mobile-nav {
+        display: none;
+        position: absolute;
+        background: $white-color;
+        top: 50px;
+        width: 100%;
+        border-radius: $border-radius;
+        height: fit-content;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.18);
+        transition: all 250ms ease-out;
+        border: 1px solid #eee;
+        ul {
+          list-style-type: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          li {
+            cursor: $cursor;
+            text-transform: $uppercase;
+            display: inline-block;
+            margin: 0 38px;
+            display: block;
+            padding: 15px 20px;
+            color: #8897ae;
+            border-bottom: 1px solid #eee;
+            background: transparent;
+            text-align: left;
+            font-weight: 500;
+            font-size: 16px;
+            button {
+              transition: 0.5s;
+              width: 100%;
+              font-size: 17px;
+              border: none;
+              font-weight: 500;
+              text-align: left;
+              background: transparent;
+              color: #8897ae;
+              text-transform: $uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    .container {
+      .header-inner {
+        .mobile-nav-toggler {
+          cursor: pointer;
+          display: block;
+          padding-right: 30px;
+        }
+        .nav-bar {
+          display: none;
         }
       }
     }

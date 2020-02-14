@@ -5,6 +5,7 @@
     <DestinationCompoent />
     <BoatRegisterComponent />
     <BoatComponent />
+    <FooterComponent />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HeroComponent from "./components/HeroComponent";
 import DestinationCompoent from "./components/DestinationComponent";
 import BoatRegisterComponent from "./components/BoatRegisterComponent";
 import BoatComponent from "./components/BoatComponent";
+import FooterComponent from "./components/FooterComponent";
 
 export default {
   name: "App",
@@ -22,7 +24,8 @@ export default {
     HeroComponent,
     DestinationCompoent,
     BoatRegisterComponent,
-    BoatComponent
+    BoatComponent,
+    FooterComponent
   }
 };
 </script>
