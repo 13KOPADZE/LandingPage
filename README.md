@@ -1,4 +1,5 @@
 # landing-page
+Building landing page for learning purpouse using scss and vue cli.
 
 ## Project setup
 ```
