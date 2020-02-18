@@ -82,6 +82,7 @@
   -webkit-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
   border: 1px solid #eee;
+  z-index: 1;
 }
 
 .header .container .header-inner .mobile-nav ul {
@@ -102,8 +103,6 @@
 .header .container .header-inner .mobile-nav ul li {
   cursor: pointer;
   text-transform: uppercase;
-  display: inline-block;
-  margin: 0 38px;
   display: block;
   padding: 15px 20px;
   color: #8897ae;
@@ -344,6 +343,8 @@
   padding: 0;
   margin-bottom: 110px;
   margin-top: -70px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .counter .counter-info {
@@ -358,7 +359,7 @@
 
 .counter .counter-info p {
   font-size: 18px;
-  padding-top: 18px;
+  padding-top: 5px;
   color: #717171;
 }
 
@@ -474,8 +475,14 @@
 
 @media (max-width: 960px) {
   .grid-content .grid {
+    gap: 15px;
+    margin-top: 0px;
     -ms-grid-columns: (minmax(100px, 1fr))[2];
         grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .grid-content button {
+    height: 50px;
+    margin: 50px 0;
   }
 }
 
@@ -512,7 +519,6 @@
     padding: 20px;
   }
   .counter .counter-info:last-child {
-    border-bottom: 1px solid #ccc;
     width: 100%;
     margin-bottom: 20px;
     padding: 20px;
@@ -604,6 +610,7 @@
   }
   .boat-register button {
     margin: 40px 0;
+    height: 50px;
   }
 }
 
@@ -662,8 +669,8 @@
   background: #e7434e;
   border-radius: 5px;
   position: absolute;
-  left: 20px;
-  top: 10px;
+  left: 15px;
+  top: 15px;
   padding: 5px 15px;
 }
 
@@ -720,6 +727,16 @@
   transition: 0.5s;
 }
 
+@media (max-width: 960px) {
+  .boat-content .boat-headings p {
+    margin-bottom: 0px;
+  }
+  .boat-content button {
+    height: 50px;
+    margin: 50px 0;
+  }
+}
+
 @media (max-width: 600px) {
   .boat-content .boat-grid {
     -ms-grid-columns: (minmax(100px, 1fr))[1];
@@ -751,6 +768,9 @@ footer .footer-content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #fff;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 footer .footer-content h3 {
@@ -877,10 +897,10 @@ button {
 .bar1,
 .bar2,
 .bar3 {
-  width: 35px;
-  height: 5px;
+  width: 25px;
+  height: 3px;
   background-color: #fff;
-  margin: 6px 0;
+  margin: 5px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

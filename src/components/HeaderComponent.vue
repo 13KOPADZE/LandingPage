@@ -43,6 +43,8 @@ export default {
   },
   methods: {
     toggleNav() {
+      this.isActive = !this.isActive;
+
       if (this.isActive) {
         this.isActive = false;
       } else {
@@ -54,6 +56,6 @@ export default {
 </script>
 <style>
 .active {
-  display: block !important;
+  display: block;
 }
 </style>

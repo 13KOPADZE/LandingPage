@@ -35,8 +35,8 @@
         background: $primary-color;
         border-radius: $border-radius;
         position: absolute;
-        left: 20px;
-        top: 10px;
+        left: 15px;
+        top: 15px;
         padding: 5px 15px;
         p {
           color: $white-color;
@@ -83,6 +83,19 @@
       color: $primary-color;
       border: 1px solid $primary-color;
       transition: 0.5s;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .boat-content {
+    .boat-headings {
+      p {
+        margin-bottom: 0px;
+      }
+    }
+    button {
+      height: 50px;
+      margin: 50px 0;
     }
   }
 }

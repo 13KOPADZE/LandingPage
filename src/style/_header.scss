@@ -60,6 +60,7 @@
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.18);
         transition: all 250ms ease-out;
         border: 1px solid #eee;
+        z-index: 1;
         ul {
           list-style-type: none;
           padding: 0;
@@ -69,8 +70,6 @@
           li {
             cursor: $cursor;
             text-transform: $uppercase;
-            display: inline-block;
-            margin: 0 38px;
             display: block;
             padding: 15px 20px;
             color: #8897ae;

@@ -21,6 +21,7 @@ footer {
     display: flex;
     justify-content: space-between;
     color: $white-color;
+    align-items: baseline;
     h3 {
       text-transform: $uppercase;
       font-size: 14px;
